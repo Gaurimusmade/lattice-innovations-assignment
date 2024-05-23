@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "9845c46a-3ea0-4706-b8a9-93a2ee905b39",
+		"name": "Lattice-Innovations",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31335261"
+	},
+	"item": [
+		{
+			"name": "HospitalDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/api/hospital/:hospitalId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"hospital",
+						":hospitalId"
+					],
+					"variable": [
+						{
+							"key": "hospitalId",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegisterPatient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Jane Smith\",\r\n  \"address\": \"456 Oak Avenue, Othertown, NY 67890\",\r\n  \"email\": \"janeith@example.com\",\r\n  \"phone_number\": \"+916551234568\",\r\n  \"password\": \"A$trongP@ss1\", \r\n  \"photo\": \"https://www.example.com/profile_picture1.jpg\", \r\n  \"psychiatrist_id\": 2 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/patients/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"patients",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
