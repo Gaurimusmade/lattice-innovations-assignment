@@ -1,4 +1,4 @@
-const Patients = require("../models/patientsModel");
+const Patients = require("../services/patientService");
 const bcrypt = require("bcryptjs");
 const validator = require("validator");
 

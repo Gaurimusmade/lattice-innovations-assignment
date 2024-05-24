@@ -1,4 +1,4 @@
-const Hospital = require("../models/hospitalModel");
+const Hospital = require("../services/hospitalService");
 
 //1.API for fetching psychiatrists and patient details for a hospital.
 module.exports.details = async (req, res) => {
